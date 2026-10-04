@@ -1,15 +1,13 @@
-name : Docker CLI
+name: Docker CLI
 
 on:
   push:
-   branches:
-    - main
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-
 
     steps:
       - name: Checkout code
@@ -26,3 +24,8 @@ jobs:
 
       - name: Push Docker Image
         run: docker push saalik123/devops-rvsn:v1
+
+
+
+
+
